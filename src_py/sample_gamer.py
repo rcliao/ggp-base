@@ -1,5 +1,5 @@
 '''
-@author: Sam
+@author: Eric
 '''
 
 import random
@@ -8,10 +8,10 @@ from org.ggp.base.util.statemachine import MachineState
 from org.ggp.base.util.statemachine.implementation.prover import ProverStateMachine
 from org.ggp.base.player.gamer.statemachine import StateMachineGamer
 
-class SamplePythonGamer(StateMachineGamer):
+class EricDummyGamer(StateMachineGamer):
 
     def getName(self):
-        pass
+        return "EricDummyBot"
         
     def stateMachineMetaGame(self, timeout):
         pass

@@ -126,7 +126,12 @@
             <classpath refid="GGP_Base.classpath"/>
         </java>
     </target>
-    <target name="SimpleGameSim">
+    <target name="Server">
+        <java classname="org.ggp.base.apps.server.Server" failonerror="true" fork="yes">
+            <classpath refid="GGP_Base.classpath"/>
+        </java>
+    </target>
+   <target name="SimpleGameSim">
         <java classname="org.ggp.base.apps.utilities.SimpleGameSim" failonerror="true" fork="yes">
             <classpath refid="GGP_Base.classpath"/>
         </java>
@@ -149,7 +154,12 @@
             <classpath refid="GGP_Base.classpath"/>
         </java>
     </target>
-    <target name="PropNetAnnotater">
+    <target name="Player">
+        <java classname="org.ggp.base.apps.player.Player" failonerror="true" fork="yes">
+            <classpath refid="GGP_Base.classpath"/>
+        </java>
+    </target>
+   <target name="PropNetAnnotater">
         <java classname="org.ggp.base.util.propnet.factory.annotater.PropNetAnnotater" failonerror="true" fork="yes">
             <classpath refid="GGP_Base.classpath"/>
         </java>
